@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit; /* inherit from body */
+}
+
+html {
+	font-size: 62.5%; /* 16px = 1rem  */
+}
+
+body {
+	/* background-color: #222; */
+	/* background-color: #000; */
+	box-sizing: border-box;
+	color: white;
+	font-family: "Lato", sans-serif;
+	font-size: 1.7rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+/* REUSABLE COMPONENTS */
+
+.btn {
+	text-decoration: none;
+	background-image: linear-gradient(to right, #f05a28, #ec008c);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: all 0.2s;
+	font-weight: 400;
+}
+
+.btn:hover {
+	color: white;
+}
+
+/* HEADER */
+.header {
+	background-color: #222;
+	/* height: 6rem; */
+	overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.nav-bar {
+	position: relative;
+	padding: 1.5rem 0;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* About me page*/
+
+.logo-box {
+	float: left;
+	position: absolute;
+	left: 10rem;
+	padding-bottom: 1rem;
+}
+
+.logo {
+	display: inline-block;
+	height: 2.8rem;
+}
+
+.nav-items {
+	float: right;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	margin-right: 10rem;
+}
+
+.nav-items li {
+	float: left;
+	margin-right: 6rem;
+	letter-spacing: 0.2rem;
+}
+
+.active-btn {
+	color: white;
+	border-bottom: 0.1rem solid #ec008c;
+	padding-bottom: 1rem;
+}
+
+main {
+	/* height: 100vh; */
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.94),
+			rgba(0, 0, 0, 0.94)
+		),
+		url(../img/nat-9.jpg);
+	background-size: cover;
+	padding: 5rem 0;
+    margin-top: 5rem;
+	/* background-color: #000; */
+}
+
+.photo-box {
+	margin-top: 15rem;
+}
+
+.photo-box img {
+	width: 100%;
+	border-radius: 50%;
+	border: 0.2rem solid rgb(255, 255, 255);
+	outline: 0.2rem solid #ec008c;
+	outline-offset: 1rem;
+}
+
+.about-box {
+	background-color: #222;
+	/* height: 50rem; */
+	padding: 5rem;
+	border-radius: 0.4rem;
+}
+
+.about-box--head {
+	padding-bottom: 5rem;
+	border-bottom: 1px solid #858585;
+	margin-top: -2rem;
+}
+
+.heading-primary {
+	font-size: 6rem;
+	background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+	display: inline-block;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.about-box--body {
+	padding: 2rem;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 0.5rem;
+	/* font-size: 2.5rem; */
+}
+
+ol {
+	margin: 0 auto;
+	background-color: #2e2e2e;
+	padding: 2.5rem;
+	border-radius: 0.3rem;
+}
+
+ol > div {
+	float: left;
+	margin: 2rem 3rem;
+	/* margin-right: 4rem; */
+}
+
+.contact-btn {
+	display: inline-block;
+	width: 30rem;
+	padding: 1.5rem 2.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+	margin: 2rem 0 0 25%;
+	text-align: center;
+	font-size: 2.5rem;
+	letter-spacing: 0.2rem;
+	font-weight: 400;
+	border-radius: 10rem;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+	transition: all 0.2s;
+	outline: none;
+	border: none;
+}
+
+.contact-btn:hover {
+	transform: translateY(-0.7rem);
+}
+
+.contact-btn:active {
+	transform: translateY(-0.2rem);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+footer {
+	padding: 2rem;
+	background-color: #222;
+	color: rgb(148, 148, 148);
+	text-align: center;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+/* CONTACT PAGE */
+form {
+	padding: 3rem 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 1.5rem 2.5rem;
+	background-color: #2e2e2e;
+	font-size: 1.6rem;
+	font-weight: 300;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+label {
+	padding: 0.5rem 0;
+	display: inline-block;
+}
+
+.input-element {
+	margin-bottom: 2rem;
+}

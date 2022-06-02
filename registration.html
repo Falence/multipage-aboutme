@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About me | Home</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar clearfix">
+            <div class="logo-box">
+                <img  src="img/fl.png" alt="" class="logo">
+            </div>
+            <ul class="nav-items">
+                <li><a class="btn" href="about-me.html">About</a></li>
+                <li><a class="btn" href="#">Contact me</a></li>
+                <li><a class="btn active-btn" href="registration.html">Register</a></li>
+                <li><a class="btn" href="login.html">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="photo-box">
+                    <img src="img/me.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2-of-3">
+                <div class="about-box">
+                    <div class="about-box--head">
+                        <h1 class="heading-primary">Register now!</h1>
+                        <p class="paragraph-primary">Amazing people signing up everyday over the years and contributing amazing ideas. I can't wait to have you onboard, friend.</p>
+                    </div>
+                    
+                    <div class="row">
+                        <form action="" >
+                            <div class="input-element">
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" placeholder="Your first name" required>
+                            </div>
+                            
+                            <div class="input-element">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" placeholder="Your last name" required>
+                            </div>
+
+                            <div class="input-element">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Your email" required>
+                            </div>
+                            <div class="input-element">
+                                <label for="gender">Gender:</label>
+                                <select name="gender" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="input-element">
+                                <label for="phone">Phone:</label>
+                                <input type="number" id="phone" placeholder="Your phone number" required>
+                            </div>
+                            <div class="input-element">
+                                <label for="country">Country:</label>
+                                <input type="country" id="country" placeholder="Your country" required>
+                            </div>
+                            <div class="input-element">
+                                <label for="state">State / Province:</label>
+                                <input type="state" id="state" placeholder="Your state / province" required>
+                            </div>
+                            <div class="input-element">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" minlength="8" placeholder="Your password" required>
+                            </div>
+                            <div class="input-element">
+                                <label for="c-password">Confirm password:</label>
+                                <input type="password" id="c-password" minlength="8" placeholder="Confirm password" required>
+                            </div>
+
+                                <input class="contact-btn" type="submit" value="Register now">
+
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <small>@2022 | Falence Lemungoh</small>
+    </footer>
+</body>
+</html>
