@@ -187,6 +187,8 @@ ol > div {
 
 .contact-btn:hover {
 	transform: translateY(-0.7rem);
+	background-image: linear-gradient(to right, #ec008c, #f05a28, #ec008c);
+	cursor: pointer;
 }
 
 .contact-btn:active {
